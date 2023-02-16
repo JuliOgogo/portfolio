@@ -1,4 +1,16 @@
 .main {
     height: 100vh;
-    background-color: #ffc4d5;
+    background-color: #ffd0db;
 }
+
+.text {
+    width: 300px;
+    background-color: #eaeaea;
+}
+
+.photo {
+    width: 300px;
+    height: 400px;
+    background-color: #eaeaea;
+}
+
