@@ -1,5 +1,5 @@
 .contacts {
-    height: 50vh;
+    min-height: 50vh;
     background-color: #ffb6ae;
 }
 
@@ -12,11 +12,18 @@
     background-color: #eaeaea;
 }
 
-form {
+.contactsForm {
     border: 1px solid;
     width: 60%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    gap: 5px;
+}
+
+.contactsA {
+    text-decoration: none;
+    background-color: #ffd9a3;
+    margin: 20px 0;
 }

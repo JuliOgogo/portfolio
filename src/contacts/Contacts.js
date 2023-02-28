@@ -7,12 +7,12 @@ function Contacts() {
         <div className={style.contacts}>
             <div className={`${styleContainer.container} ${style.contactsContainer}`}>
                 <h2 className={style.title}>Contacts</h2>
-                <form action="#">
+                <form className={style.contactsForm} action="#">
                     <input/>
                     <input/>
                     <textarea/>
-                    <input type="submit" value="Submit"/>
                 </form>
+                <a className={style.contactsA} href={'#'}>Submit</a>
             </div>
         </div>
     );
