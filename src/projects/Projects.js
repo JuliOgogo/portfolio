@@ -10,7 +10,7 @@ function Projects() {
                 <h2 className={style.title}>Projects</h2>
                 <div className={style.projectsElements}>
                     <Project title={'Todolist'} description={'Todolist'}/>
-                    <Project title={'Ignat'} description={'Ignat'}/>
+                    <Project title={'Ignat'} description={'Ignat Ignat Ignat Ignat Ignat Ignat Ignat Ignat Ignat Ignat'}/>
                     <Project title={'Social Network'} description={'Social Network'}/>
                 </div>
             </div>
