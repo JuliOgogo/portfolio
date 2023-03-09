@@ -7,10 +7,13 @@ function Projects() {
     return (
         <div className={style.projects}>
             <div className={`${styleContainer.container} ${style.projectsContainer}`}>
-                <h2 className={style.title}>Projects</h2>
+                <div className={style.title}>
+                    <h2>My <span>Projects</span></h2>
+                </div>
                 <div className={style.projectsElements}>
                     <Project title={'Todolist'} description={'Todolist'}/>
-                    <Project title={'Ignat'} description={'Ignat Ignat Ignat Ignat Ignat Ignat Ignat Ignat Ignat Ignat'}/>
+                    <Project title={'Ignat'}
+                             description={'Ignat Ignat Ignat Ignat Ignat Ignat Ignat Ignat Ignat Ignat'}/>
                     <Project title={'Social Network'} description={'Social Network'}/>
                 </div>
             </div>

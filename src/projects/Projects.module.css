@@ -1,6 +1,6 @@
 .projects {
     min-height: 100vh;
-    background-color: #debeff;
+    background-color: #fff;
 }
 
 .projectsContainer {
@@ -9,7 +9,22 @@
 }
 
 .title {
-    background-color: #eaeaea;
+    /*background-color: #eaeaea;*/
+    padding: 60px 0 54px;
+}
+
+.title h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 55px;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin: 0;
+    color: #555;
+    line-height: 1.2;
+}
+
+.title span {
+    color: #72b626;
 }
 
 .projectsElements {
