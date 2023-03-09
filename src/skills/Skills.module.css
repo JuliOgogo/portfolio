@@ -20,3 +20,9 @@
     flex-wrap: wrap;
     box-sizing: border-box;
 }
+
+@media screen and (max-width: 626px) {
+    .skillsElements {
+        justify-content: center;
+    }
+}

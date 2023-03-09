@@ -14,7 +14,7 @@
 
 .contactsForm {
     border: 1px solid;
-    width: 60%;
+    width: 40%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -22,8 +22,18 @@
     gap: 5px;
 }
 
+.contactsForm input, .contactsForm textarea {
+    width: 100%;
+}
+
 .contactsA {
     text-decoration: none;
     background-color: #ffd9a3;
     margin: 20px 0;
+}
+
+@media screen and (max-width: 375px) {
+    .contactsForm {
+        width: 100%;
+    }
 }

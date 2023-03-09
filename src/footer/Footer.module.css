@@ -32,3 +32,19 @@
     background-color: #ffbeef;
     margin-top: 20px;
 }
+
+@media screen and (max-width: 796px) {
+    .elements {
+        width: 60%;
+    }
+}
+@media screen and (max-width: 530px) {
+    .elements {
+        width: 80%;
+    }
+}
+@media screen and (max-width: 398px) {
+    .elements {
+        width: 100%;
+    }
+}
