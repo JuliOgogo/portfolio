@@ -1,6 +1,6 @@
 .project {
     width: 250px;
-    background-color: #eaeaea;
+    background-color: #fff;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -20,13 +20,28 @@
 .icon a {
     text-decoration: none;
     background-color: #8fc0ef;
+    margin: 30px;
+}
+
+.projectInfo {
+    margin: 0 0 30px;
+    padding: 0 30px;
 }
 
 .project h3 {
-    background-color: #c0c0c0;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    margin: 0 0 22px 0;
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 26px;
+    color: #72b626;
 }
 
 .description {
-    background-color: #c0c0c0;
-    width: 90%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    line-height: 28px;
+    padding-bottom: 12px;
+    color: #555;
 }
