@@ -4,8 +4,8 @@ import style from './Project.module.css';
 function Project(props) {
     return (
         <div className={style.project}>
-            <div className={style.icon}>
-                <a href={'#'}>Show</a>
+            <div className={style.icon} style={props.style}>
+                <a href={'#'}>See more</a>
             </div>
             <div className={style.projectInfo}>
                 <h3>{props.title}</h3>
