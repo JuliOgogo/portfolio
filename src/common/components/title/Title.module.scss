@@ -1,3 +1,5 @@
+@import "../../styles/sass/variables";
+
 .title {
   padding: 60px 0 54px;
 
@@ -8,13 +10,13 @@
     font-weight: 900;
     text-transform: uppercase;
     margin: 0;
-    color: #555;
+    color: $textColor;
     line-height: 1.2;
 
     &::before {
       position: absolute;
       content: ''; /*обязательное свойство*/
-      background-color: #72b626;
+      background-color: $primaryColor;
       height: 2px;
       width: 30px;
       right: -50px;
@@ -27,7 +29,7 @@
     &::after {
       position: absolute;
       content: ''; /*обязательное свойство*/
-      background-color: #72b626;
+      background-color: $primaryColor;
       height: 2px;
       width: 30px;
       left: -50px;
@@ -43,6 +45,6 @@
   }
 
   span {
-    color: #72b626;
+    color: $primaryColor;
   }
 }

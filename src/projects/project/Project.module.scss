@@ -1,3 +1,5 @@
+@import "../../common/styles/sass/variables";
+
 .project {
   width: 500px;
   display: flex;
@@ -38,7 +40,7 @@
       font-size: 34px;
       font-weight: 700;
       line-height: 26px;
-      color: #72b626;
+      color: $primaryColor;
     }
 
     .description {
@@ -46,7 +48,7 @@
       font-size: 15px;
       line-height: 28px;
       padding-bottom: 12px;
-      color: #555;
+      color: $textColor;
     }
   }
 }
