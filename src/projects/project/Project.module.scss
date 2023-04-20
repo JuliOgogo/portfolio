@@ -1,4 +1,5 @@
 @import "../../common/styles/sass/variables";
+@import "../../common/styles/sass/mixins";
 
 .project {
   width: 500px;
@@ -34,21 +35,13 @@
     padding: 0 30px;
 
     h3 {
-      font-family: 'Poppins', sans-serif;
-      text-transform: uppercase;
       margin: 0 0 22px 0;
-      font-size: 34px;
-      font-weight: 700;
-      line-height: 26px;
-      color: $primaryColor;
+      @include textSettings($fontFamilyForH, 34px, 26px, 700, uppercase, $primaryColor);
     }
 
     .description {
-      font-family: 'Open Sans', sans-serif;
-      font-size: 15px;
-      line-height: 28px;
       padding-bottom: 12px;
-      color: $textColor;
+      @include textSettings($fontFamilyForDiv, 15px, 28px);
     }
   }
 }
