@@ -1,0 +1,67 @@
+@import "../common/styles/sass/variables";
+@import "../common/styles/sass/mixins";
+
+.main {
+  height: 100vh;
+  background-color: $bgColor;
+
+  margin: 0 auto;
+  max-width: 1170px;
+  padding-left: 30px;
+  padding-right: 30px;
+
+  .mainContainer {
+
+    .text {
+      margin-top: 26px;
+      @include textSettings($fontFamilyForDiv, 16px, 1.2, 400);
+
+      h1 span {
+        color: $primaryColor;
+      }
+
+      .btnContainer {
+        cursor: pointer;
+        background-color: $primaryColor;
+        margin-top: 30px;
+        padding: 0 33px;
+        border-radius: 26px;
+        height: 46px;
+        display: inline-block;
+
+        @include textSettings($fontFamilyForH, 15px, 46px, 500, uppercase);
+
+        a {
+          text-decoration: none;
+          color: #fff;
+          letter-spacing: .5px;
+        }
+      }
+    }
+
+    .photo {
+      position: relative;
+      max-width: 440px;
+      margin: 0 auto;
+
+      &::before {
+        border: 6px solid $primaryColor;
+        position: absolute;
+        content: '';
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 0;
+        transform: translate3d(26px, 26px, -26px);
+      }
+
+      img {
+        position: relative;
+        z-index: 1;
+        max-width: 100%;
+        height: auto;
+      }
+    }
+  }
+}
