@@ -5,15 +5,10 @@
   height: 100vh;
   background-color: $bgColor;
 
-  margin: 0 auto;
-  max-width: 1170px;
-  padding-left: 30px;
-  padding-right: 30px;
-
   .mainContainer {
 
     .text {
-      margin-top: 26px;
+      margin: 0 auto;
       @include textSettings($fontFamilyForDiv, 16px, 1.2, 400);
 
       h1 span {
