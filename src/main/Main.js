@@ -8,8 +8,8 @@ function Main() {
         <div className={style.main}>
             <div className={`${styleContainer.container} ${style.mainContainer}`}>
                 <div className={style.text}>
-                    <span>Hi There!</span>
-                    <h1>I am <span>Julia Titkova</span></h1>
+                    <h3>Hi There!</h3>
+                    <h1>I'm <span>Julia Titkova</span></h1>
                     <p>Frontend Developer based in Moscow</p>
                     <div className={style.btnContainer}>
                         <a href="#">download my cv</a>

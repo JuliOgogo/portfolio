@@ -9,16 +9,29 @@
 
     .text {
       margin: 0 auto;
-      @include textSettings($fontFamilyForDiv, 16px, 1.2, 400);
+
+      h3 {
+        margin: 0 0 8px 0;
+        @include textSettings($fontFamilyForDiv, 19px, 1.2, 400, uppercase);
+      }
+
+      h1 {
+        margin: 19px 0 10px;
+        @include textSettings($fontFamilyForH, 42px, 42px, 600, uppercase);
+      }
 
       h1 span {
         color: $primaryColor;
       }
 
+      p {
+        margin: 11px 0 23px;
+        @include textSettings($fontFamilyForDiv, 16px, 32px, 400);
+      }
+
       .btnContainer {
         cursor: pointer;
         background-color: $primaryColor;
-        margin-top: 30px;
         padding: 0 33px;
         border-radius: 26px;
         height: 46px;
