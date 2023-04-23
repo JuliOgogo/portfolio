@@ -39,10 +39,19 @@
 
         @include textSettings($fontFamilyForH, 15px, 46px, 500, uppercase);
 
+        &:hover {
+          background-color: $textColor;
+          transition-duration: .6s;
+        }
+
         a {
           text-decoration: none;
           color: #fff;
           letter-spacing: .5px;
+
+          .icon {
+            padding-right: 11px;
+          }
         }
       }
     }
