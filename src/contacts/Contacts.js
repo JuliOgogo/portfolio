@@ -4,7 +4,7 @@ import styleContainer from '../common/styles/Container.module.css';
 
 function Contacts() {
     return (
-        <div className={style.contacts}>
+        <div className={style.contacts} id={'contacts'}>
             <div className={`${styleContainer.container} ${style.contactsContainer}`}>
                 <h2 className={style.title}>Contacts</h2>
                 <form className={style.contactsForm} action="#">

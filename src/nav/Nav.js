@@ -9,10 +9,10 @@ import {faMessage} from '@fortawesome/free-solid-svg-icons'
 function Nav() {
     return (
         <div className={style.nav}>
-            <a href={'#'}><FontAwesomeIcon icon={faHome} className={style.icon}/>Home</a>
-            <a href={'#'}><FontAwesomeIcon icon={faList} className={style.icon}/>Skills</a>
-            <a href={'#'}><FontAwesomeIcon icon={faBriefcase} className={style.icon}/>Projects</a>
-            <a href={'#'}><FontAwesomeIcon icon={faMessage} className={style.icon}/>Contacts</a>
+            <a href={'#home'}><FontAwesomeIcon icon={faHome} className={style.icon}/>Home</a>
+            <a href={'#skills'}><FontAwesomeIcon icon={faList} className={style.icon}/>Skills</a>
+            <a href={'#projects'}><FontAwesomeIcon icon={faBriefcase} className={style.icon}/>Projects</a>
+            <a href={'#contacts'}><FontAwesomeIcon icon={faMessage} className={style.icon}/>Contacts</a>
         </div>
     );
 }

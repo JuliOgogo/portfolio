@@ -2,9 +2,16 @@
 
 .header {
     height: 80px;
-    background-color: $bgSecondColor;
+    background-color: rgba(235, 235, 235, 0.8);
 
     display: flex;
     justify-content: flex-end;
     align-items: center;
+
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
 }

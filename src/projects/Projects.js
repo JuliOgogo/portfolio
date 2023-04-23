@@ -32,7 +32,7 @@ function Projects() {
 
 
     return (
-        <div className={style.projects}>
+        <div className={style.projects} id={'projects'}>
             <div className={`${styleContainer.container} ${style.projectsContainer}`}>
                 <Title text1={'My'} text2={'Projects'}/>
                 <div className={style.projectsElements}>

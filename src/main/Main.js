@@ -7,7 +7,7 @@ import {faDownload} from '@fortawesome/free-solid-svg-icons'
 
 function Main() {
     return (
-        <div className={style.main}>
+        <div className={style.main} id={'home'}>
             <div className={`${styleContainer.container} ${style.mainContainer}`}>
                 <div className={style.text}>
                     <h3>Hi There!</h3>
