@@ -1,0 +1,29 @@
+@import '../../common/styles/sass/variables';
+@import '../../common/styles/sass/mixins';
+
+.skill {
+  width: 300px;
+  background-color: $bgColor;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding: 30px 40px;
+  box-sizing: border-box;
+
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px #aaa;
+
+  @include textSettings($fontFamilyForH, 20px, 31px, 400, uppercase);
+
+  &:hover {
+    background-color: $textColor;
+    color: $bgColor;
+    transition-duration: .6s;
+  }
+
+  .icon {
+    font-size: 40px;
+    color: $primaryColor;
+  }
+}

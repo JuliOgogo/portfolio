@@ -1,5 +1,5 @@
 import React from 'react';
-import style from './Skills.module.css';
+import style from './Skills.module.scss';
 import styleContainer from '../common/styles/Container.module.css';
 import Skill from './skill/Skill';
 import Title from '../common/components/title/Title';
@@ -28,7 +28,7 @@ function Skills() {
                     <Skill title={'HTML'} icon={<FontAwesomeIcon icon={faHtml5}/>}/>
                     <Skill title={'CSS'} icon={<FontAwesomeIcon icon={faCss3}/>}/>
                     <Skill title={'SASS-SCSS'} icon={<FontAwesomeIcon icon={faSass}/>}/>
-                    <Skill title={'Material UA'} icon={<SiMaterialdesign/>}/>
+                    <Skill title={'Material UI'} icon={<SiMaterialdesign/>}/>
                     <Skill title={'Storybook'} icon={<SiStorybook/>}/>
                     <Skill title={'Unit Tests'} icon={<FontAwesomeIcon icon={faReact}/>}/>
                     <Skill title={'GIT'} icon={<FontAwesomeIcon icon={faGithub}/>}/>
