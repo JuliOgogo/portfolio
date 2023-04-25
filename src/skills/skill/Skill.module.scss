@@ -19,6 +19,7 @@
   &:hover {
     background-color: $textColor;
     color: $bgColor;
+    box-shadow: 1px 1px 1px #aaa;
     transition-duration: .6s;
   }
 
