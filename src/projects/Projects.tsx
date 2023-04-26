@@ -30,31 +30,30 @@ function Projects() {
     }
     const componentsLink = 'https://github.com/JuliOgogo/hws2'
 
-
     return (
         <div className={style.projects} id={'projects'}>
             <div className={`${styleContainer.container} ${style.projectsContainer}`}>
-                <Title text1={'My'} text2={'Projects'}/>
+                <Title text={'Projects.'}/>
                 <div className={style.projectsElements}>
                     <Project style={socialNetworkStyle}
                              link={socialNetworkLink}
                              title={'Social Network'}
-                             description={'Social Network'}/>
+                             description={'TS/REDUX/RESTAPI/THUNK/MATERIAL UI/UNIT TESTS'}/>
 
                     <Project style={todoListStyle}
                              link={todoListLink}
                              title={'Todolist'}
-                             description={'Todolist'}/>
+                             description={'TS/REDUX/RESTAPI/THUNK/MATERIAL UI/UNIT TESTS'}/>
 
                     <Project style={learnCardsStyle}
                              link={learnCardsLink}
                              title={'Learn Cards'}
-                             description={'Learn Cards'}/>
+                             description={'IT WAS A COMMAND WORK. APP FOR LEARNING SOME CARDS'}/>
 
                     <Project style={componentsStyle}
                              link={componentsLink}
                              title={'Components'}
-                             description={'Components'}/>
+                             description={'REACT/TS/CSS'}/>
                 </div>
             </div>
         </div>

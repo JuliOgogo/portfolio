@@ -1,4 +1,5 @@
 @import '../common/styles/sass/variables';
+@import '../common/styles/sass/mixins';
 
 .projects {
   min-height: 100vh;
@@ -11,9 +12,9 @@
     .projectsElements {
       border: 1px solid;
       width: 100%;
-      display: flex;
-      justify-content: space-around;
-      flex-wrap: wrap;
+
+      @include flex(space-around);
+
       box-sizing: border-box;
       @media screen and (max-width: 626px) {
         justify-content: center;
