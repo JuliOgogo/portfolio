@@ -1,7 +1,11 @@
 import React from 'react';
 import style from './Title.module.scss';
 
-function Title(props) {
+type TitlePropsType = {
+    text: string
+}
+
+function Title(props: TitlePropsType) {
     return (
         <div className={style.title}>
             <h3>{props.text}</h3>
