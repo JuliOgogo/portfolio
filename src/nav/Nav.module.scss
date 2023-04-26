@@ -9,7 +9,6 @@
 
   a {
     text-decoration: none;
-    @include textSettings($fontFamilyForH, 16px, 50px, 400, uppercase);
 
     .icon {
       margin-right: 8px;

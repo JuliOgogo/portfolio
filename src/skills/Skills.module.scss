@@ -3,14 +3,15 @@
 
 .skills {
   min-height: 100vh;
-  background-color: $bgSecondColor;
+  background: $bgSecondColor;
+  padding: 100px 0 70px;
 
   .skillsContainer {
     flex-direction: column;
     justify-content: flex-start;
 
     .skillsElements {
-      /*border: 1px solid;*/
+      border: 1px solid;
       width: 100%;
       display: flex;
       justify-content: space-between;
@@ -18,11 +19,6 @@
       flex-wrap: wrap;
       gap: 20px;
       box-sizing: border-box;
-      padding: 20px 30px;
-
-      @media screen and (max-width: 1026px) {
-        justify-content: center;
-      }
     }
   }
 }

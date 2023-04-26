@@ -1,50 +1,28 @@
-@import "../../styles/sass/variables";
+@import '../../styles/sass/variables';
+
+$bg-img: url('../src/assets/images/dots.png');
 
 .title {
-  padding: 80px 0 54px;
+  margin-bottom: 80px;
+  text-align: center;
 
-  h2 {
+  h3 {
     position: relative;
-    font-family: 'Poppins', sans-serif;
-    font-size: 55px;
+    font-size: 40px;
     font-weight: 900;
-    text-transform: uppercase;
-    margin: 0;
-    color: $textColor;
-    line-height: 1.2;
-
-    &::before {
-      position: absolute;
-      content: ''; /*обязательное свойство*/
-      background-color: $primaryColor;
-      height: 2px;
-      width: 30px;
-      right: -50px;
-      top: 30px;
-      @media screen and (max-width: 626px) {
-        content: none;
-      }
-    }
+    display: inline-block;
+    z-index: 4;
 
     &::after {
+      content: '';
+      width: 100%;
+      height: 30px;
+      /*background-image: $bg-img;*/
+      background-repeat: repeat;
       position: absolute;
-      content: ''; /*обязательное свойство*/
-      background-color: $primaryColor;
-      height: 2px;
-      width: 30px;
-      left: -50px;
-      top: 30px;
-      @media screen and (max-width: 626px) {
-        content: none;
-      }
+      bottom: -10px;
+      left: 0;
+      z-index: -1;
     }
-
-    @media screen and (max-width: 480px) {
-      font-size: 35px;
-    }
-  }
-
-  span {
-    color: $primaryColor;
   }
 }

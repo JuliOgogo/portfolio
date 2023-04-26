@@ -2,29 +2,47 @@
 @import '../../common/styles/sass/mixins';
 
 .skill {
-  width: 300px;
-  background-color: $bgColor;
+  width: 200px;
+  background: $bgColor;
+  padding: 50px 20px;
+  box-shadow: 0 10px 30px -8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+  border-radius: 5px;
+
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  text-align: center;
-  padding: 30px 40px;
-  box-sizing: border-box;
 
-  border-radius: 10px;
-  box-shadow: 5px 5px 5px #aaa;
-
-  @include textSettings($fontFamilyForH, 20px, 31px, 400, uppercase);
-
-  &:hover {
-    background-color: $textColor;
-    color: $bgColor;
-    box-shadow: 1px 1px 1px #aaa;
-    transition-duration: .6s;
+  &:hover .icon {
+    color: $textSecondColor;
+    background: $primaryColor;
   }
 
   .icon {
-    font-size: 40px;
-    color: $primaryColor;
+    width: 70px;
+    height: 70px;
+    margin-bottom: 20px;
+    font-size: 30px;
+    line-height: 70px;
+    background: $bgThirdColor;
+    border-radius: 50%;
+    transition: all .5s;
+    text-align: center;
+  }
+
+  h6 {
+    margin-bottom: 15px;
+    font-weight: 800;
+    font-size: 18px;
+  }
+
+  p {
+    margin: 0;
+    word-spacing: 2px;
+    font-size: 14px;
+    line-height: 1.6;
+    color: $textColor;
+    text-align: center;
   }
 }

@@ -13,12 +13,10 @@
 
       h3 {
         margin: 0 0 8px 0;
-        @include textSettings($fontFamilyForDiv, 19px, 1.2, 400, uppercase);
       }
 
       h1 {
         margin: 19px 0 10px;
-        @include textSettings($fontFamilyForH, 42px, 42px, 600, uppercase);
       }
 
       h1 span {
@@ -27,7 +25,6 @@
 
       p {
         margin: 11px 0 23px;
-        @include textSettings($fontFamilyForDiv, 16px, 32px, 400);
       }
 
       .btnContainer {
@@ -38,7 +35,6 @@
         height: 46px;
         display: inline-block;
 
-        @include textSettings($fontFamilyForH, 15px, 46px, 500, uppercase);
 
         &:hover {
           background-color: $textColor;

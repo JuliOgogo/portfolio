@@ -36,12 +36,10 @@
 
     h3 {
       margin: 0 0 22px 0;
-      @include textSettings($fontFamilyForH, 34px, 26px, 700, uppercase, $primaryColor);
     }
 
     .description {
       padding-bottom: 12px;
-      @include textSettings($fontFamilyForDiv, 15px, 28px);
     }
   }
 }
