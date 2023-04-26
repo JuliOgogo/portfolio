@@ -4,53 +4,53 @@
 .main {
   height: 100vh;
   background-color: $bgColor;
-  /*padding-top: 80px;*/
+  padding-top: 80px;
 
   .mainContainer {
 
-    .text {
+    .photo {
+      position: relative;
+      max-width: 420px;
+      margin: 0 auto;
+
+      img {
+        position: relative;
+        z-index: 1;
+        max-width: 100%;
+        height: auto;
+      }
+    }
+
+    .description {
       margin: 0 auto;
 
       h3 {
-        margin: 0 0 8px 0;
+        font-size: 30px;
+        font-weight: 800;
+        margin-bottom: 5px;
       }
 
-      h1 {
-        margin: 19px 0 10px;
-      }
-
-      h1 span {
-        color: $primaryColor;
+      .subTitle {
+        color: #999;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin-bottom: 20px;
       }
 
       p {
-        margin: 11px 0 23px;
+        max-width: 650px;
+        color: $textColor;
+        font-size: 15px;
+        line-height: 1.6;
+        margin: 0;
+      }
+
+      .buttons {
+        margin-top: 30px;
+        display: flex;
+        gap: 5px;
       }
     }
   }
 }
 
-.photo {
-  position: relative;
-  max-width: 440px;
-  margin: 0 auto;
-
-  &::before {
-    border: 6px solid $primaryColor;
-    position: absolute;
-    content: '';
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 0;
-    transform: translate3d(26px, 26px, -26px);
-  }
-
-  img {
-    position: relative;
-    z-index: 1;
-    max-width: 100%;
-    height: auto;
-  }
-}
