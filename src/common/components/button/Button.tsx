@@ -8,9 +8,18 @@ type ButtonPropsType = {
 }
 
 function Button(props: ButtonPropsType) {
+
+    /*const finalClassName = s.button
+        + (disabled ? ' ' + s.disabled :
+            xType === 'red' ? ' ' + s.red :
+                xType === 'secondary' ? ' ' + s.secondary :
+                    className ? ' ' + className : ' ' + s.default)*/
+
+    const finallyStyle = style.button + (props.theme === 'black' ? ' ' + style.blackButton : ' ' + style.whiteButton)
+
     return (
         <a href={props.link}>
-            <span className={props.theme === 'black' ? style.blackButton : style.whiteButton}>{props.text}</span>
+            <span className={finallyStyle}>{props.text}</span>
         </a>
     );
 }
