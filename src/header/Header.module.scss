@@ -1,8 +1,9 @@
 @import '../common/styles/sass/variables';
+@import '../common/styles/sass/mixins';
 
 .header {
     height: 80px;
-    background-color: rgba(228, 228, 228, 0.8);
+    background: $bgColor;
 
     display: flex;
     justify-content: flex-end;
