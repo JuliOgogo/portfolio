@@ -2,7 +2,7 @@ import React from 'react';
 import style from './Main.module.scss';
 import styleContainer from '../common/styles/Container.module.css';
 import myPhoto from '../assets/images/myPhoto.jpg'
-import Button from "../common/components/button/Button";
+import Button from '../common/components/button/Button';
 
 function Main() {
     return (

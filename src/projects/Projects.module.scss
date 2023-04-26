@@ -4,13 +4,13 @@
 .projects {
   min-height: 100vh;
   background-color: $bgColor;
+  padding: 100px 0 70px;
 
   .projectsContainer {
     flex-direction: column;
     justify-content: flex-start;
 
     .projectsElements {
-      border: 1px solid;
       width: 100%;
 
       @include flex(space-around);
