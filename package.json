@@ -16,6 +16,7 @@
     "@types/node": "^16.18.11",
     "@types/react": "^18.0.27",
     "@types/react-dom": "^18.0.10",
+    "formik": "^2.2.9",
     "gh-pages": "^5.0.0",
     "node-sass": "^8.0.0",
     "react": "^18.2.0",
