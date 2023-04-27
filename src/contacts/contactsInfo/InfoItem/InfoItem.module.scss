@@ -3,7 +3,7 @@
 
 .infoItem {
   width: 200px;
-  padding: 50px 20px;
+  padding: 0 20px 50px;
   margin-bottom: 30px;
 
   @include flex(column);
