@@ -9,10 +9,7 @@
   margin-bottom: 30px;
   border-radius: 5px;
 
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  @include flex(column);
 
   &:hover .icon {
     color: $textSecondColor;
@@ -28,7 +25,8 @@
     background: $bgThirdColor;
     border-radius: 50%;
     transition: all .5s;
-    text-align: center;
+
+    @include flex();
   }
 
   h6 {
