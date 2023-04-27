@@ -1,0 +1,44 @@
+@import '../../../common/styles/sass/variables';
+@import '../../../common/styles/sass/mixins';
+
+.infoItem {
+  width: 200px;
+  padding: 50px 20px;
+  margin-bottom: 30px;
+
+  @include flex(column);
+
+  &:hover .icon {
+    color: $textSecondColor;
+    background: $primaryColor;
+  }
+
+  .icon {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 20px;
+    font-size: 30px;
+    line-height: 70px;
+    background: $bgColor;
+    box-shadow: 0 10px 30px -8px rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    transition: all .5s;
+
+    @include flex();
+  }
+
+  h6 {
+    margin-bottom: 15px;
+    font-weight: 800;
+    font-size: 18px;
+  }
+
+  p {
+    margin: 0;
+    word-spacing: 2px;
+    font-size: 14px;
+    line-height: 1.6;
+    color: $textColor;
+    text-align: center;
+  }
+}

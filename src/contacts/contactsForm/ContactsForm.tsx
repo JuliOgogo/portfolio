@@ -41,7 +41,7 @@ function ContactsForm() {
                 name='message'
                 placeholder={'Message'}
                 onChange={formik.handleChange}
-                value={formik.values.email}
+                value={formik.values.message}
             />
             <div> {/*дивка, чтобы на кнопку не применялось свойство stretch*/}
                 <button type='submit' className={`${buttonStyle.button} ${buttonStyle.blackButton}`}>Submit</button>

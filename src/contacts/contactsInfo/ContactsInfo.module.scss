@@ -1,0 +1,9 @@
+@import '../../common/styles/sass/variables';
+@import '../../common/styles/sass/mixins';
+
+.contactsInfo {
+  width: 65%;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px
+}

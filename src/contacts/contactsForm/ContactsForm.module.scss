@@ -2,7 +2,7 @@
 @import '../../common/styles/sass/mixins';
 
 .contactsForm {
-  width: 50%;
+  width: 65%;
   @include flex(column, flex-start, stretch, 10px);
 
   input, textarea {
