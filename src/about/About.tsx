@@ -1,12 +1,12 @@
 import React from 'react';
-import style from './Main.module.scss';
+import style from './About.module.scss';
 import styleContainer from '../common/styles/Container.module.css';
 import myPhoto from '../assets/images/myPhoto.jpg'
 import Button from '../common/components/button/Button';
 
-function Main() {
+function About() {
     return (
-        <div className={style.main} id={'home'}>
+        <div className={style.main} id={'about'}>
             <div className={`${styleContainer.container} ${style.mainContainer}`}>
 
                 <div className={style.photo}>
@@ -36,7 +36,7 @@ function Main() {
     );
 }
 
-export default Main;
+export default About;
 
 /*
 <div className="content mb-30">
