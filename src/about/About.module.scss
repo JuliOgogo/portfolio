@@ -2,9 +2,9 @@
 @import '../common/styles/sass/mixins';
 
 .main {
-  height: 75vh;
+  min-height: 60vh;
   background-color: $bgColor;
-  padding-top: 80px;
+  padding: 100px 0 70px;
 
   .mainContainer {
 
