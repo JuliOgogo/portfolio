@@ -1,0 +1,15 @@
+@import '../common/styles/sass/variables';
+
+.footer {
+  padding: 30px;
+  background-color: #1c1c1c;
+  text-align: center;
+
+  .text {
+    font-size: 13px;
+    word-spacing: 2px;
+    line-height: 1.6;
+    margin: 0;
+    color: $textColor;
+  }
+}
