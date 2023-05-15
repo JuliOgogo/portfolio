@@ -44,6 +44,10 @@ $img: url('../assets/images/sunset.jpg');
       font-weight: 200;
       font-size: 55px;
 
+      span {
+        font-weight: 300;
+      }
+
       @media screen and (max-width: 425px) {
         font-size: 40px;
       }
