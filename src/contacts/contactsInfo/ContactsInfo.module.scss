@@ -5,5 +5,15 @@
   width: 65%;
   display: flex;
   justify-content: space-between;
-  gap: 10px
+  gap: 10px;
+  flex-wrap: wrap;
+
+  @media screen and (max-width: 1200px) {
+    width: 80%;
+  }
+
+  @media screen and (max-width: 992px) {
+    width: 100%;
+    justify-content: center;
+  }
 }
