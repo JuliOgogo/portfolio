@@ -1,6 +1,5 @@
 import React from 'react';
 import style from './ContactsForm.module.scss';
-import buttonStyle from '../../common/components/button/Button.module.scss';
 import {useFormik} from 'formik';
 
 function ContactsForm() {
@@ -44,7 +43,7 @@ function ContactsForm() {
                 value={formik.values.message}
             />
             <div> {/*дивка, чтобы на кнопку не применялось свойство stretch*/}
-                <button type='submit' className={`${buttonStyle.button} ${buttonStyle.blackButton}`}>Submit</button>
+                <button type='submit'>Send</button>
             </div>
         </form>
     );

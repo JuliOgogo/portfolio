@@ -1,5 +1,6 @@
 @import '../../common/styles/sass/variables';
 @import '../../common/styles/sass/mixins';
+@import '../../common/components/button/Button.module';
 
 .contactsForm {
   width: 65%;
@@ -27,5 +28,9 @@
 
   textarea {
     margin-bottom: 20px;
+  }
+
+  button {
+    @extend .button, .blackButton
   }
 }
