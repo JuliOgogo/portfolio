@@ -6,12 +6,36 @@
   padding: 0 15px;
   margin-bottom: 30px;
 
+  @media screen and (max-width: 1200px) {
+    width: 400px;
+  }
+
+  @media screen and (max-width: 990px) {
+    width: 500px;
+  }
+
+  @media screen and (max-width: 550px) {
+    width: 325px;
+  }
+
   .projectImg {
     position: relative;
     width: 100%;
     height: 300px;
     background-size: cover;
     background-position: center;
+
+    @media screen and (max-width: 1200px) {
+      height: 250px;
+    }
+
+    @media screen and (max-width: 990px) {
+      height: 300px;
+    }
+
+    @media screen and (max-width: 550px) {
+      height: 225px;
+    }
 
     .overlay {
       position: absolute;
