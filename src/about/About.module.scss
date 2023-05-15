@@ -33,13 +33,35 @@ $bg-img: url('../assets/images/dots.png');
         z-index: 0;
       }
 
-      @media screen and (max-width: 750px) {
-        margin-bottom: 30px;
+      @media screen and (max-width: 990px) {
+        max-width: 300px;
+      }
+
+      @media screen and (max-width: 760px) {
+        max-width: 420px;
+        margin-bottom: 40px;
       }
     }
 
     .description {
+      max-width: 600px;
       margin: 0 auto;
+
+      @media screen and (max-width: 1200px) {
+        max-width: 420px;
+      }
+
+      @media screen and (max-width: 990px) {
+        max-width: 300px;
+      }
+
+      @media screen and (max-width: 760px) {
+        max-width: 420px;
+      }
+
+      @media screen and (max-width: 500px) {
+        @include flex(column);
+      }
 
       h3 {
         font-size: 30px;
@@ -55,23 +77,10 @@ $bg-img: url('../assets/images/dots.png');
       }
 
       p {
-        max-width: 650px;
         margin: 0 auto;
         color: $textColor;
         font-size: 15px;
         line-height: 1.6;
-
-        @media screen and (max-width: 1200px) {
-          max-width: 420px;
-        }
-
-        @media screen and (max-width: 990px) {
-          max-width: 300px;
-        }
-
-        @media screen and (max-width: 750px) {
-          max-width: 420px;
-        }
       }
 
       .buttons {
