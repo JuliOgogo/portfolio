@@ -1,6 +1,6 @@
 @import '../../styles/sass/variables';
 
-$bg-img: url('../src/assets/images/dots.png');
+$bg-img: url('../../../assets/images/dots.png');
 
 .title {
   margin-bottom: 80px;
@@ -14,13 +14,13 @@ $bg-img: url('../src/assets/images/dots.png');
     z-index: 4;
 
     &::after {
+      position: absolute;
       content: '';
       width: 100%;
       height: 30px;
-      /*background-image: $bg-img;*/
+      background-image: $bg-img;
       background-repeat: repeat;
-      position: absolute;
-      bottom: -10px;
+      bottom: -4px;
       left: 0;
       z-index: -1;
     }

@@ -1,10 +1,12 @@
 @import '../common/styles/sass/variables';
 @import '../common/styles/sass/mixins';
 
-.main {
+$bg-img: url('../assets/images/dots.png');
+
+.about {
   min-height: 60vh;
   background-color: $bgColor;
-  padding: 100px 0 70px;
+  padding: 100px 0;
 
   .mainContainer {
 
@@ -18,6 +20,18 @@
         z-index: 1;
         max-width: 100%;
         height: auto;
+      }
+
+      &::after {
+        position: absolute;
+        content: '';
+        width: 80%;
+        height: 80%;
+        left: -30px;
+        bottom: -30px;
+        background-image: $bg-img;
+        background-repeat: repeat;
+        z-index: 0;
       }
     }
 

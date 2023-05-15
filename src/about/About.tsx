@@ -6,7 +6,7 @@ import Button from '../common/components/button/Button';
 
 function About() {
     return (
-        <div className={style.main} id={'about'}>
+        <div className={style.about} id={'about'}>
             <div className={`${styleContainer.container} ${style.mainContainer}`}>
 
                 <div className={style.photo}>
