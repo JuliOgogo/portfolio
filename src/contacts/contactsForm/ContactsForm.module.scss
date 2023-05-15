@@ -20,6 +20,7 @@
     padding: 10px;
     background: $bgColor;
     box-shadow: 0 10px 30px -8px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
   }
 
   .nameAndEmail {
@@ -35,6 +36,9 @@
   }
 
   textarea {
+    width: 100%;
+    height: 200px;
+    resize: none;
     margin-bottom: 20px;
   }
 

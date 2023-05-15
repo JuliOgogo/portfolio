@@ -28,3 +28,9 @@
         width: 1170px;
     }
 }
+
+@media screen and (max-width: 760px) {
+    .container {
+        justify-content: center;
+    }
+}

@@ -7,6 +7,7 @@ import socialNetworkImg from './../assets/images/koala2.jpg';
 import todoListImg from './../assets/images/birds.jpg';
 import learnCardsImg from './../assets/images/road.jpg';
 import componentsImg from './../assets/images/forest.jpg';
+import {Fade} from 'react-awesome-reveal';
 
 function Projects() {
 
@@ -35,25 +36,27 @@ function Projects() {
             <div className={`${styleContainer.container} ${style.projectsContainer}`}>
                 <Title text={'Projects.'}/>
                 <div className={style.projectsElements}>
-                    <Project style={socialNetworkStyle}
-                             link={socialNetworkLink}
-                             title={'Social Network'}
-                             description={'TS/REDUX/RESTAPI/THUNK/MATERIAL UI/UNIT TESTS'}/>
+                    <Fade cascade damping={0.1} triggerOnce>
+                        <Project style={socialNetworkStyle}
+                                 link={socialNetworkLink}
+                                 title={'Social Network'}
+                                 description={'TS/REDUX/RESTAPI/THUNK/MATERIAL UI/UNIT TESTS'}/>
 
-                    <Project style={todoListStyle}
-                             link={todoListLink}
-                             title={'Todolist'}
-                             description={'TS/REDUX/RESTAPI/THUNK/MATERIAL UI/UNIT TESTS'}/>
+                        <Project style={todoListStyle}
+                                 link={todoListLink}
+                                 title={'Todolist'}
+                                 description={'TS/REDUX/RESTAPI/THUNK/MATERIAL UI/UNIT TESTS'}/>
 
-                    <Project style={learnCardsStyle}
-                             link={learnCardsLink}
-                             title={'Learn Cards'}
-                             description={'IT WAS A COMMAND WORK. APP FOR LEARNING SOME CARDS'}/>
+                        <Project style={learnCardsStyle}
+                                 link={learnCardsLink}
+                                 title={'Learn Cards'}
+                                 description={'IT WAS A COMMAND WORK. APP FOR LEARNING SOME CARDS'}/>
 
-                    <Project style={componentsStyle}
-                             link={componentsLink}
-                             title={'Components'}
-                             description={'REACT/TS/CSS'}/>
+                        <Project style={componentsStyle}
+                                 link={componentsLink}
+                                 title={'Components'}
+                                 description={'REACT/TS/CSS'}/>
+                    </Fade>
                 </div>
             </div>
         </div>
