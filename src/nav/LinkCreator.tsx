@@ -1,5 +1,5 @@
 import React from 'react';
-import style from './Nav.module.scss';
+import style from './LinkCreator.module.scss';
 import {Link} from 'react-scroll';
 import {IconProp} from '@fortawesome/fontawesome-svg-core';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
@@ -9,12 +9,13 @@ type LinkCreatorPropsType = {
     offset: number
     icon: IconProp
     linkText: string
+    scroll: boolean
 }
 
 export function LinkCreator(props: LinkCreatorPropsType) {
-    const {to, offset, icon, linkText} = props
+    const {to, offset, icon, linkText, scroll} = props
     return (
-        <Link activeClass={style.active}
+        <Link activeClass={scroll ? `${style.active} ${style.scroll}` : style.active}
               to={to}
               spy={true}
               smooth={true}

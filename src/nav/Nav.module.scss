@@ -15,22 +15,14 @@
   a {
     position: relative;
     text-decoration: none;
-    color: $primaryColor;
-
-    .icon {
-      margin-right: 8px;
-
-      @media screen and (max-width: 600px) {
-        font-size: 0;
-      }
-    }
+    color: #fff;
 
     &:hover {
       &:after {
         content: '';
         width: 100%;
         height: 2px;
-        background: $primaryColor;
+        background: #fff;
         position: absolute;
         bottom: 0;
         left: 0;
@@ -38,17 +30,14 @@
       }
     }
   }
+}
 
-  .active {
+.scroll a {
+  color: $primaryColor;
+
+  &:hover {
     &:after {
-      content: '';
-      width: 100%;
-      height: 2px;
       background: $primaryColor;
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      transition: all .5s;
     }
   }
 }

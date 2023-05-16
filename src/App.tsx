@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './App.scss';
 import Header from './header/Header';
 import Home from './home/Home';
@@ -9,8 +9,21 @@ import Contacts from './contacts/Contacts';
 import Footer from './footer/Footer';
 
 function App() {
+
+    // change bg color on scroll
+    const [color, setColor] = useState(false)
+    const changeColor = () => {
+        if (window.scrollY > 1000) {
+            setColor(true)
+        } else {
+            setColor(false)
+        }
+    }
+
+    window.addEventListener('scroll', changeColor)
+
     return (
-        <div className="App">
+        <div className={color ? 'App AppHeader' : 'App'}>
             <Header/>
             <Home/>
             <About/>
