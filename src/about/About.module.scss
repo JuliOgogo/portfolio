@@ -30,6 +30,14 @@ $bg-img: url('../assets/images/dots.png');
         background-image: $bg-img;
         background-repeat: repeat;
         z-index: 0;
+
+        @media screen and (max-width: 520px) {
+          width: 110%;
+          height: 110%;
+          left: 50%;
+          bottom: 50%;
+          transform: translate(-50%, 50%);
+        }
       }
 
       @media screen and (max-width: 990px) {

@@ -27,7 +27,7 @@ $img: url('../assets/images/sunset.jpg');
   .homeContainer {
     position: relative;
     z-index: 10;
-    color: $textSecondColor;
+    color: #ffffff;
     @include flex(column);
 
     h5 {
@@ -35,8 +35,12 @@ $img: url('../assets/images/sunset.jpg');
       font-weight: 800;
       margin-bottom: 10px;
 
-      @media screen and (max-width: 425px) {
+      @media screen and (max-width: 660px) {
         font-size: 35px;
+      }
+
+      @media screen and (max-width: 425px) {
+        font-size: 30px;
       }
     }
 
@@ -48,8 +52,12 @@ $img: url('../assets/images/sunset.jpg');
         font-weight: 300;
       }
 
+      @media screen and (max-width: 660px) {
+        font-size: 35px;
+      }
+
       @media screen and (max-width: 425px) {
-        font-size: 40px;
+        font-size: 28px;
       }
     }
   }

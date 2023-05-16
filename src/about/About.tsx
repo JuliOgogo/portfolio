@@ -4,15 +4,19 @@ import styleContainer from '../common/styles/Container.module.css';
 import myPhoto from '../assets/images/myPhoto.jpg'
 import Button from '../common/components/button/Button';
 import {Fade} from 'react-awesome-reveal';
+import {Tilt} from 'react-tilt';
 
 function About() {
     return (
         <div className={style.about} id={'about'}>
             <div className={`${styleContainer.container} ${style.mainContainer}`}>
                 <Fade cascade triggerOnce>
-                    <div className={style.photo}>
-                        <img src={myPhoto} alt={'Photo'}/>
-                    </div>
+
+                    <Tilt options={{max: 10, scale: 1.05, speed: 2000}}>
+                        <div className={style.photo}>
+                            <img src={myPhoto} alt={'Photo'}/>
+                        </div>
+                    </Tilt>
 
                     <div className={style.description}>
 
