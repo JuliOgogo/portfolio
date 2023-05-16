@@ -32,10 +32,10 @@ function Projects() {
     const componentsLink = 'https://github.com/JuliOgogo/hws2'
 
     return (
-        <div className={style.projects} id={'projects'}>
+        <div className={style.projects}>
             <div className={`${styleContainer.container} ${style.projectsContainer}`}>
                 <Title text={'Projects.'}/>
-                <div className={style.projectsElements}>
+                <div className={style.projectsElements} id={'projects'}>
                     <Fade cascade damping={0.1} triggerOnce>
                         <Project style={socialNetworkStyle}
                                  link={socialNetworkLink}
