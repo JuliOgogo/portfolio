@@ -1,11 +1,10 @@
 @import '../common/styles/sass/variables';
-@import '../common/styles/sass/mixins';
 
 .icon {
   margin-right: 8px;
 
   @media screen and (max-width: 600px) {
-    font-size: 0;
+    display: none;
   }
 }
 
