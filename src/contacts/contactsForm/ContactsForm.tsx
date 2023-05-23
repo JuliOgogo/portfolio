@@ -2,6 +2,13 @@ import React from 'react';
 import style from './ContactsForm.module.scss';
 import {useFormik} from 'formik';
 import {Fade} from 'react-awesome-reveal';
+import {contactsAPI} from '../../api/api';
+
+export type FormType = {
+    name?: string
+    email?: string
+    message?: string
+}
 
 function ContactsForm() {
 
@@ -12,7 +19,9 @@ function ContactsForm() {
             message: '',
         },
         onSubmit: values => {
-            alert(JSON.stringify(values, null, 2));
+            // alert(JSON.stringify(values, null, 2));
+            contactsAPI.sendMessage(values).then(() => alert('Your message has been sent'))
+                .catch(() => alert('Something went wrong'))
         },
     });
 
