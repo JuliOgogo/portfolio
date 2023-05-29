@@ -5,7 +5,7 @@ import {LinkCreator} from './LinkCreator';
 
 function Nav() {
 
-    // change bg color on scroll
+    // change text color on scroll
     const [color, setColor] = useState(false)
     const changeColor = () => {
         if (window.scrollY > window.innerHeight) {
