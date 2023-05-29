@@ -13,8 +13,10 @@ export function InfoItem(props: InfoItemPropsType) {
             <div className={style.icon}>
                 {props.icon}
             </div>
-            <h6>{props.title}</h6>
-            <p>{props.text}</p>
+            <div className={style.titleAndText}>
+                <h6>{props.title}</h6>
+                <p>{props.text}</p>
+            </div>
         </div>
     );
 }
