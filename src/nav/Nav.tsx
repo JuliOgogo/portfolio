@@ -8,7 +8,7 @@ function Nav() {
     // change bg color on scroll
     const [color, setColor] = useState(false)
     const changeColor = () => {
-        if (window.scrollY > 1000) {
+        if (window.scrollY > window.innerHeight) {
             setColor(true)
         } else {
             setColor(false)
