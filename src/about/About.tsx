@@ -20,7 +20,7 @@ function About() {
 
                     <div className={style.description}>
 
-                        <h3>About Me.</h3>
+                        <h3>About Me</h3>
 
                         <div className={style.subTitle}>Frontend Developer</div>
 

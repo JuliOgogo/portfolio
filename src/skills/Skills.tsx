@@ -12,7 +12,7 @@ function Skills() {
     return (
         <div className={style.skills} id={'skills'}>
             <div className={`${styleContainer.container} ${style.skillsContainer}`}>
-                <Title text={'Skills.'}/>
+                <Title text={'Skills'}/>
                 <div className={style.skillsElements}>
                     <Fade cascade damping={0.1} triggerOnce>
                         <Skill icon={<HiOutlineComputerDesktop/>}

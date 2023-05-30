@@ -9,7 +9,7 @@ function Contacts() {
     return (
         <div className={style.contacts} id={'contacts'}>
             <div className={`${styleContainer.container} ${style.contactsContainer}`}>
-                <Title text={'Contacts.'}/>
+                <Title text={'Contacts'}/>
                 <ContactsInfo/>
                 <ContactsForm/>
             </div>

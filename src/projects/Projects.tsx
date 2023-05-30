@@ -34,7 +34,7 @@ function Projects() {
     return (
         <div className={style.projects}>
             <div className={`${styleContainer.container} ${style.projectsContainer}`}>
-                <Title text={'Projects.'}/>
+                <Title text={'Projects'}/>
                 <div className={style.projectsElements} id={'projects'}>
                     <Fade cascade damping={0.1} triggerOnce>
                         <Project style={socialNetworkStyle}
