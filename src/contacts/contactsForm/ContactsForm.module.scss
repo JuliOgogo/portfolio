@@ -4,7 +4,6 @@
 
 .contactsForm {
   width: 65%;
-  @include flex(column, flex-start, stretch, 10px);
 
   @media screen and (max-width: 1200px) {
     width: 80%;
@@ -27,20 +26,32 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     gap: 10px;
-
-    input {
-      width: 50%;
-
-      @media screen and (max-width: 500px) {
-        width: 100%;
-      }
-    }
+    margin-bottom: 10px;
 
     @media screen and (max-width: 500px) {
       flex-direction: column;
       gap: 0;
+      margin-bottom: 0;
+    }
+
+    .name, .email {
+      width: 50%;
+      @include flex(column, flex-start, flex-start);
+
+      @media screen and (max-width: 500px) {
+        width: 100%;
+      }
+
+      input {
+        width: 100%;
+      }
+
+      p {
+        margin: 5px 0;
+        padding: 0;
+      }
     }
   }
 

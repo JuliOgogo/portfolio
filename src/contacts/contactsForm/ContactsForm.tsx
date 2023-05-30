@@ -54,28 +54,32 @@ function ContactsForm() {
         <form onSubmit={formik.handleSubmit} className={style.contactsForm}>
             <Fade cascade damping={0.1} triggerOnce>
                 <div className={style.nameAndEmail}>
-                    <input
-                        id='name'
-                        name='name'
-                        type='text'
-                        placeholder={'Name'}
-                        onChange={formik.handleChange}
-                        value={formik.values.name}
-                    />
-                    <p className={style.error}>
-                        {formik.touched.name && formik.errors.name}
-                    </p>
-                    <input
-                        id='email'
-                        name='email'
-                        type='email'
-                        placeholder={'Email'}
-                        onChange={formik.handleChange}
-                        value={formik.values.email}
-                    />
-                    <p className={style.error}>
-                        {formik.touched.email && formik.errors.email}
-                    </p>
+                    <div className={style.name}>
+                        <input
+                            id='name'
+                            name='name'
+                            type='text'
+                            placeholder={'Name'}
+                            onChange={formik.handleChange}
+                            value={formik.values.name}
+                        />
+                        {formik.touched.name && formik.errors.name && <p className={style.error}>
+                            {formik.errors.name}
+                        </p>}
+                    </div>
+                    <div className={style.email}>
+                        <input
+                            id='email'
+                            name='email'
+                            type='email'
+                            placeholder={'Email'}
+                            onChange={formik.handleChange}
+                            value={formik.values.email}
+                        />
+                        {formik.touched.email && formik.errors.email && <p className={style.error}>
+                            {formik.errors.email}
+                        </p>}
+                    </div>
                 </div>
                 <textarea
                     id='message'
