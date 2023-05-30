@@ -13,8 +13,10 @@ function Skill(props: SkillPropsType) {
             <div className={style.icon}>
                 {props.icon}
             </div>
-            <h6>{props.title}</h6>
-            <p>{props.description}</p>
+            <div className={style.titleAndDescription}>
+                <h6>{props.title}</h6>
+                <p>{props.description}</p>
+            </div>
         </div>
     );
 }

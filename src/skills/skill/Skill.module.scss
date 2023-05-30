@@ -29,18 +29,23 @@
     @include flex();
   }
 
-  h6 {
-    margin-bottom: 15px;
-    font-weight: 800;
-    font-size: 18px;
-  }
+  .titleAndDescription {
+    @include flex(column, flex-start);
+    min-height: 90px;
 
-  p {
-    margin: 0;
-    word-spacing: 2px;
-    font-size: 14px;
-    line-height: 1.6;
-    color: $textColor;
-    text-align: center;
+    h6 {
+      margin-bottom: 15px;
+      font-weight: 800;
+      font-size: 18px;
+    }
+
+    p {
+      margin: 0;
+      word-spacing: 2px;
+      font-size: 14px;
+      line-height: 1.6;
+      color: $textColor;
+      text-align: center;
+    }
   }
 }

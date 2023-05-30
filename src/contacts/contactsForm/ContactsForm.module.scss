@@ -32,6 +32,15 @@
 
     input {
       width: 50%;
+
+      @media screen and (max-width: 500px) {
+        width: 100%;
+      }
+    }
+
+    @media screen and (max-width: 500px) {
+      flex-direction: column;
+      gap: 0;
     }
   }
 
@@ -44,5 +53,17 @@
 
   button {
     @extend .button, .blackButton
+  }
+
+  span {
+    margin-left: 20px;
+
+    @media screen and (max-width: 400px) {
+      font-size: 12px;
+    }
+  }
+
+  .error {
+    color: red;
   }
 }

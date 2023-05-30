@@ -23,7 +23,7 @@ function Nav() {
             <LinkCreator to={'about'} offset={-79} icon={faCloud} linkText={'About'} scroll={color}/>
             <LinkCreator to={'skills'} offset={-10} icon={faList} linkText={'Skills'} scroll={color}/>
             <LinkCreator to={'projects'} offset={-210} icon={faBriefcase} linkText={'Projects'} scroll={color}/>
-            <LinkCreator to={'contacts'} offset={-100} icon={faMessage} linkText={'Contacts'} scroll={color}/>
+            <LinkCreator to={'contacts'} offset={-80} icon={faMessage} linkText={'Contacts'} scroll={color}/>
         </div>
     );
 }

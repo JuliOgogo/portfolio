@@ -26,7 +26,7 @@ function Skills() {
                                description={'Unit Tests, StoryBook, SnapShot'}/>
                         <Skill icon={<MdOutlineTagFaces/>}
                                title={'Helpful skills'}
-                               description={'Git, Jira, Figma'}/>
+                               description={'Git, Vercel, Jira, Figma'}/>
                     </Fade>
                 </div>
             </div>

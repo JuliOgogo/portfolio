@@ -18,6 +18,31 @@ function ContactsForm() {
             email: '',
             message: '',
         },
+        validate: (values) => {
+            const errors: FormType = {};
+            if (!values.name) {
+                errors.name = 'Please enter your name';
+            }
+
+            if (!values.email) {
+                errors.email = 'Please enter your email';
+            } else if (
+                !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(values.email)
+            ) {
+                errors.email = 'Please enter valid email';
+            }
+
+            if (!values.message) {
+                errors.message = 'Please enter your message';
+            } else if (values.message.length < 2) {
+                errors.message = 'Your message is too short';
+            } else if (values.message.length > 1000) {
+                errors.message = 'Your message is too long';
+            }
+
+            return errors;
+        },
+        validateOnBlur: false,
         onSubmit: values => {
             // alert(JSON.stringify(values, null, 2));
             contactsAPI.sendMessage(values).then(() => alert('Your message has been sent'))
@@ -37,6 +62,9 @@ function ContactsForm() {
                         onChange={formik.handleChange}
                         value={formik.values.name}
                     />
+                    <p className={style.error}>
+                        {formik.touched.name && formik.errors.name}
+                    </p>
                     <input
                         id='email'
                         name='email'
@@ -45,6 +73,9 @@ function ContactsForm() {
                         onChange={formik.handleChange}
                         value={formik.values.email}
                     />
+                    <p className={style.error}>
+                        {formik.touched.email && formik.errors.email}
+                    </p>
                 </div>
                 <textarea
                     id='message'
@@ -55,6 +86,9 @@ function ContactsForm() {
                 />
                 <div> {/*дивка, чтобы на кнопку не применялось свойство stretch*/}
                     <button type='submit'>Send</button>
+                    <span className={style.error}>
+                        {formik.touched.message && formik.errors.message}
+                    </span>
                 </div>
             </Fade>
         </form>
