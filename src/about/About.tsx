@@ -31,7 +31,7 @@ function About() {
                             to write smooth, clean and carefully crafted code.</p>
 
                         <div className={style.buttons}>
-                            <Button theme={'black'} text={'Download CV'} link={'#'}/>
+                            <Button theme={'black'} text={'Download CV'} link={'#'} download={true}/>
                             <Button theme={'white'} text={'Contact Me'} link={'#contacts'}/>
                         </div>
 

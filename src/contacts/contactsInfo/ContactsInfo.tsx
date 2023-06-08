@@ -11,7 +11,7 @@ function ContactsInfo() {
         <div className={style.contactsInfo}>
             <Fade cascade damping={0.1} triggerOnce>
                 <InfoItem icon={<FiMapPin/>} title={'Address'} text={'Moscow, Russia'}/>
-                <InfoItem icon={<MdOutlineAlternateEmail/>} title={'Email'} text={'juli.ogogo@yandex.ru'}/>
+                <InfoItem icon={<MdOutlineAlternateEmail/>} title={'Email'} text={'titkovajuli@gmail.com'}/>
                 <InfoItem icon={<AiOutlinePhone/>} title={'Phone'} text={'+7 991 985 75 07'}/>
             </Fade>
         </div>
