@@ -54,6 +54,11 @@
         opacity: 1;
       }
 
+      @media screen and (max-width: 550px) {
+        opacity: 1;
+        background: rgba(255, 255, 255, 0.85);
+      }
+
       .projectInfo {
         @include flex(column);
         padding: 10px;
