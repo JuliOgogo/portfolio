@@ -17,13 +17,13 @@ function Skills() {
                     <Fade cascade damping={0.1} triggerOnce>
                         <Skill icon={<HiOutlineComputerDesktop/>}
                                title={'Web Development'}
-                               description={'JavaScript, TypeScript, React, Redux, Axios'}/>
+                               description={'React, Redux, TypeScript, JavaScript, Axios'}/>
                         <Skill icon={<IoColorPaletteOutline/>}
                                title={'Web Design'}
                                description={'HTML, CSS, SASS-SCSS, Material UI'}/>
                         <Skill icon={<IoCheckboxOutline/>}
                                title={'Testing'}
-                               description={'Unit Tests, StoryBook, SnapShot'}/>
+                               description={'Unit Testing, StoryBook, SnapShot'}/>
                         <Skill icon={<MdOutlineTagFaces/>}
                                title={'Helpful skills'}
                                description={'Git, Vercel, Jira, Figma'}/>
